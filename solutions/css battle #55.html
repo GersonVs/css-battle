@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Battle (#55 - Windmill)</title>
+
+        <style>
+            body {
+                background-color: #171d23;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+            }
+        
+            .container {
+                background-color: #191919;
+                width: 400px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 1px 2px 10px 5px #fff; 
+            }
+        
+            .container > div:nth-child(1n) {
+                clip-path: circle(41.5% at 0 50%);
+                width: 120px;
+                height: 120px;
+                background: #4F77FF;
+                position: absolute;
+                left: 50%;
+                top: 13.3%
+            }
+        
+            .container > div:nth-child(2n) {
+                clip-path: circle(41.5% at 100% 50%);
+                width: 120px;
+                height: 120px;
+                background: #4F77FF;
+                position: absolute;
+                left: 19.9%;
+                top: 46.7%
+            }
+        
+            .container > div:nth-child(3n) {
+                clip-path: circle(41.5% at 50% 100%);
+                width: 120px;
+                height: 120px;
+                background: #F9E492;
+                position: absolute;
+                left: 22.6%;
+                top: 10%
+            }
+        
+            .container > div:nth-child(4n) {
+                clip-path: circle(41.5% at 50% 0);
+                width: 120px;
+                height: 120px;
+                background: #F9E492;
+                position: absolute;
+                left: 47.4%;
+                top: 49.9%;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+
+</html>
