@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Battle (#48 - Wash Your Hands)</title>
+
+        <style>
+            body {
+                background-color: #171d23;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+            }
+        
+            .container {
+                background-color: #191919;
+                width: 400px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 0 0 2px #fff; 
+                display: grid;
+                place-items: center;
+            }
+        
+            .container > div {
+                width: 200px;
+                height: 100px;
+                border-radius: 20px;
+                background: #FE5F55;
+                box-shadow: 0 20px 0 #A64942;
+                transform: translateY(-10px) 
+            }
+
+            .container > div::after {
+                content: '';
+                padding: 20px 70px;
+                background: #A64942;
+                position: absolute;
+                left: calc(50% - 70px);
+                top: calc(50% - 20px);
+                border-radius: 40px
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div></div>
+        </div>
+    </body>
+
+</html>
